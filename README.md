@@ -43,8 +43,8 @@
 |:---:|:---:|
 | System | Windows 10 |
 | Language | C |
-| Test Language | MIPS Assembly Language |
-| IDE | Visual Studio Community 2019 v16.8.3 |
+| Test Assembly Language | MIPS |
+| IDE | Visual Studio 2019 ( Community ) v16.8.3 |
 
 ------
 
@@ -60,7 +60,7 @@
 9. Type the command which is in the following list
 
 |Command|Description|
-|:---:|---|
+|:---:|:---:|
 |c|content|
 |r|show register|
 |m|show memory|
