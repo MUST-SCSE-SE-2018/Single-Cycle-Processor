@@ -1,7 +1,7 @@
 # Single-Cycle-Processor
 
 > After learning the single cycle processor in course CO101, Kennard wanted to make a mini-cpu by 
-> himself which is simulated by C. This mini-cpu could run Assembly Language Code, and Kennard's 
+> himself which is simulated by C. This mini-cpu could run MIPS Assembly Language, and Kennard's 
 > instructor Yanyan Liang provided him with an efficient testing tool written by Perl.
 
 ------
@@ -43,7 +43,7 @@
 |:---:|:---:|
 | System | Windows 10 |
 | Language | C |
-| Test Language | Assembly Language |
+| Test Language | MIPS Assembly Language |
 | IDE | Visual Studio Community 2019 v16.8.3 |
 
 ------
