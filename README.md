@@ -1,8 +1,8 @@
 # Single-Cycle-Processor
 
 > After learning the single cycle processor in course CO101, Kennard wanted to make a mini-cpu by 
-> himself which is simulated by C and C++. This mini-cpu could run Assembly Language Code, and 
-> Kennard's instructor Yanyan Liang provided him with an efficient testing tool written by Perl.
+> himself which is simulated by C. This mini-cpu could run Assembly Language Code, and Kennard's 
+> instructor Yanyan Liang provided him with an efficient testing tool written by Perl.
 
 ------
 
@@ -42,7 +42,7 @@
 | Description | Specification |
 |:---:|:---:|
 | System | Windows 10 |
-| Language | C, C++ |
+| Language | C |
 | Test Language | Assembly Language |
 | IDE | Visual Studio Community 2019 v16.8.3 |
 
