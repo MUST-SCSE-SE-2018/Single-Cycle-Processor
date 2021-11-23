@@ -1,25 +1,65 @@
 # Single-Cycle-Processor
 
+> After learning the single cycle processor in course CO101, Kennard wanted to make a mini-cpu by 
+> himself which is simulated by C and C++. This mini-cpu could run Assembly Language Code, and 
+> Kennard's instructor Yanyan Liang provided him with an efficient testing tool written by Perl.
+
+------
+
+### Test Demo
++ test01
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test01.png)
+
++ test02
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test02.png)
+
++ Test_lw&sw
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_lw&sw.png)
+
++ Test_Negative
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Negative.png)
+
++ Test_NOR
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_NOR.png)
+
++ Test_Halt
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt.png)
+
++ Test_Halt_Outofboundary
+
+![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt_Outofboundary.png)
+
+------
+
 ### Development Environment
-+ System : **Windows 10 64bits**
-+ Language : **C, C++**
-+ IDE : **Visual Studio Community 2019 v16.8.3**
-------
 
-### How to Test
-1. Download and install [Strawberry Perl](https://strawberryperl.com/)
-2. Clone this repository to desktop
-3. Start perl terminal and enter the root
-4. Copy a **.asm** file from **Test** or write one by yourself ( ***Assembly Code*** ) under the root
-5. Use command `perl minicpuasm.pl example.asm > example.asc` to generate a **.asc** file
-6. `CO101Project.exe example.asc < incommand` to show the result
-7. You can check the result with those provided demo under the **demo** file
+| Description | Specification |
+|:---:|:---:|
+| System | Windows 10 |
+| Language | C, C++ |
+| Test Language | Assembly Language |
+| IDE | Visual Studio Community 2019 v16.8.3 |
 
 ------
-### Command List
-Start : `CO101Project.exe example.asc -r`
 
-|Command|Meaning|
+### User Manual
+1. Download and install [Strawberry Perl](https://strawberryperl.com/).
+2. Clone the repository by `git clone https://github.com/KennardWang/Single-Cycle-Processor.git`.
+3. Open cmd and enter into the root by `cd Single-Cycle-Processor`.
+4. Compile to generate a ***.exe*** file by `gcc -o scp.exe minicpu.c minicpu.h`
+5. Open **Perl** terminal and enter into the root `cd Single-Cycle-Processor`.
+6. Generate a ***.asc*** file by `perl minicpuasm.pl Test/test01.asm > test.asc`.
+7. Start to simulate by `scp.exe test.asc < incommand`.
+8. You can also simulate via separated commands by `scp.exe test.asc -r` ( ***incommand*** is an integrated command file ).
+9. Type the command which is in the following list
+
+|Command|Description|
 |:---:|---|
 |c|content|
 |r|show register|
@@ -27,17 +67,19 @@ Start : `CO101Project.exe example.asc -r`
 |p|print asc file|
 |g|control signal|
 |h|state|
-|i|capacity (in int 4)|
+|i|capacity ( the unit is **int = 4 bytes** )|
 |s|step|
 |q|quit|
 |x|quit|
+
+![cmd](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/cmd.png)
 
 ------
 
 ### License  
 + [MIT License](https://github.com/KennardWang/Single-Cycle-Processor/blob/master/LICENSE)
+
 ------
 
 ### Author
 + Kennard Wang ( 2020.11.4 )
-------
