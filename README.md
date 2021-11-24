@@ -52,12 +52,11 @@
 1. Download and install [Strawberry Perl](https://strawberryperl.com/).
 2. Clone the repository by `git clone https://github.com/KennardWang/Single-Cycle-Processor.git`.
 3. Open cmd and enter into the root by `cd Single-Cycle-Processor`.
-4. Compile to generate a ***.exe*** file by `gcc -o scp.exe minicpu.c minicpu.h`
-5. Open **Perl** terminal and enter into the root `cd Single-Cycle-Processor`.
-6. Generate a ***.asc*** file by `perl minicpuasm.pl Test/test01.asm > test.asc`.
-7. Start to simulate by `scp.exe test.asc < incommand`.
-8. You can also simulate via separated commands by `scp.exe test.asc -r` ( ***incommand*** is an integrated command file ).
-9. Type the command which is in the following list
+4. If you have installed **GCC**, you can build a ***.exe*** file by `gcc -o scp.exe minicpu.c minicpu.h`.
+5. Use **Perl** command to generate a ***.asc*** file by `perl minicpuasm.pl Test/test01.asm > test.asc`.
+6. Start to simulate by `scp.exe test.asc < incommand`.
+7. You can also simulate via separated commands by `scp.exe test.asc -r` ( ***incommand*** is an integrated command file ).
+8. Type the command which is in the following list.
 
 |Command|Description|
 |:---:|:---:|
