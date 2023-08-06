@@ -1,84 +1,149 @@
 # Single-Cycle-Processor
 
-> After learning the single cycle processor in course CO101, Kennard wanted to make a mini-cpu by 
-> himself which is simulated by C. This mini-cpu could run MIPS Assembly Language, and Kennard's 
-> instructor Yanyan Liang provided him with an efficient testing tool written by Perl.
+<div align="center">
+  <img src="https://img.shields.io/github/stars/KennardWang/Single-Cycle-Processor" />
+  <img src="https://img.shields.io/github/license/KennardWang/Single-Cycle-Processor" />
+  <img src="https://img.shields.io/badge/maintenance-No-red" />
+</div>
 
-------
+<br>
 
-### Test Demo
-+ test01
+It is a project of MUST course ***CO101-Computer Organization***, which is a mini-CPU that could run MIPS.
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test01.png)
 
-+ test02
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test02.png)
+## Table of Contents
+
+- [Development Environment](#development-environment)
+- [Install](#install)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+
+## Development Environment
+
+| <!-- --> | <!-- --> |
+|:---:|:---:|
+| System | Windows 10 x64 |
+| Language | C |
+| Test Assembly Language | MIPS |
+| IDE | Visual Studio 2019 Community v16.8.3 |
+
+
+
+## Install
+
++ Install the [Strawberry Perl](https://strawberryperl.com/).
++ Clone the repos:
+
+  ```
+  git clone https://github.com/KennardWang/Single-Cycle-Processor.git
+  ```
+
+
+
+## Usage
+
+1. Open the command line and enter the root.
+   ```
+   cd Single-Cycle-Processor
+   ```
+2. Build a `.exe` file with **GCC**.
+   ```
+   gcc -o scp.exe minicpu.c minicpu.h
+   ```
+3. Generate a `.asc` file by **Perl** command.
+   ```
+   perl minicpuasm.pl Test/test01.asm > test.asc
+   ```
+4. Run the simulation, `incommand` is an integrated command file.
+   ```
+   scp.exe test.asc < incommand
+   ```
+5. Run the simulation via separate commands.
+   ```
+   scp.exe test.asc -r
+   ``` 
+
+   <div align=center>
+     <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/cmd.png" width="70%" />
+   </div>
+   
+   Types of commands are shown in the following list.
+
+   |Command|Description|
+   |:---:|:---:|
+   |c|content|
+   |r|show register|
+   |m|show memory|
+   |p|print asc file|
+   |g|control signal|
+   |h|state|
+   |i|capacity (unit: **int = 4 bytes**)|
+   |s|step|
+   |q|quit|
+   |x|quit|
+
+
+
+## Tests
+
++ test01 & test02
+
+  <div align=center>
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test01.png" height="220px" />
+    &nbsp;
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test02.png" height="220px" />
+  </div>
 
 + Test_lw&sw
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_lw&sw.png)
+  <div align=center>
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_lw&sw.png" width="70%" />
+  </div>
 
 + Test_Negative
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Negative.png)
+  <div align=center>
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Negative.png" width="70%" />
+  </div>
 
 + Test_NOR
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_NOR.png)
+  <div align=center>
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_NOR.png" width="70%" />
+  </div>
 
 + Test_Halt
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt.png)
+  <div align=center>
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt.png" width="70%" />
+  </div>
 
 + Test_Halt_Outofboundary
 
-![test](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt_Outofboundary.png)
+  <div align=center>
+    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt_Outofboundary.png" width="70%" />
+  </div>
 
-------
 
-### Development Environment
 
-| Description | Specification |
-|:---:|:---:|
-| System | Windows 10 |
-| Language | C |
-| Test Assembly Language | MIPS |
-| IDE | Visual Studio 2019 ( Community ) v16.8.3 |
+## Maintainers
 
-------
+[@KennardWang](https://github.com/KennardWang).
 
-### User Manual
-1. Download and install [Strawberry Perl](https://strawberryperl.com/).
-2. Clone the repository by `git clone https://github.com/KennardWang/Single-Cycle-Processor.git`.
-3. Open cmd and enter into the root by `cd Single-Cycle-Processor`.
-4. If you have installed **GCC**, you can build a ***.exe*** file by `gcc -o scp.exe minicpu.c minicpu.h`.
-5. Use **Perl** command to generate a ***.asc*** file by `perl minicpuasm.pl Test/test01.asm > test.asc`.
-6. Start to simulate by `scp.exe test.asc < incommand`.
-7. You can also simulate via separated commands by `scp.exe test.asc -r` ( ***incommand*** is an integrated command file ).
-8. Type the command which is in the following list.
 
-|Command|Description|
-|:---:|:---:|
-|c|content|
-|r|show register|
-|m|show memory|
-|p|print asc file|
-|g|control signal|
-|h|state|
-|i|capacity ( the unit is **int = 4 bytes** )|
-|s|step|
-|q|quit|
-|x|quit|
 
-![cmd](https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/cmd.png)
+## Contributing
 
-------
+Feel free to [open an issue](https://github.com/KennardWang/Single-Cycle-Processor/issues) or submit [PRs](https://github.com/KennardWang/Single-Cycle-Processor/pulls).
 
-### License  
-+ [MIT License](https://github.com/KennardWang/Single-Cycle-Processor/blob/master/LICENSE)
 
-------
 
-### Author
-+ Kennard Wang ( 2020.11.4 )
+## License
+
+[MIT](LICENSE) © Kennard Wang. ( 2020.11.4 )
