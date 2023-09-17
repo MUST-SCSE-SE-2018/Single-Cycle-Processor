@@ -1,9 +1,15 @@
 # Single-Cycle-Processor
 
 <div align="center">
-  <img src="https://img.shields.io/github/stars/KennardWang/Single-Cycle-Processor" />
-  <img src="https://img.shields.io/github/license/KennardWang/Single-Cycle-Processor" />
-  <img src="https://img.shields.io/badge/maintenance-No-red" />
+  <img src="https://img.shields.io/github/stars/KennardWang/Single-Cycle-Processor?style=for-the-badge&color=FDEE21" />
+  &nbsp;
+  <img src="https://img.shields.io/github/forks/KennardWang/Single-Cycle-Processor?style=for-the-badge&color=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/windows-0078D6?logo=windows&logoColor=white&style=for-the-badge" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white" />
 </div>
 
 <br>
@@ -134,7 +140,7 @@ It is a project of MUST course ***CO101-Computer Organization***, which is a min
 
 ## Maintainers
 
-[@KennardWang](https://github.com/KennardWang).
+![badge](https://img.shields.io/badge/maintenance-NO-EF2D5E) [@KennardWang](https://github.com/KennardWang)
 
 
 
@@ -146,4 +152,4 @@ Feel free to [open an issue](https://github.com/KennardWang/Single-Cycle-Process
 
 ## License
 
-[MIT](LICENSE) © Kennard Wang. ( 2020.11.4 )
+[![license](https://img.shields.io/github/license/KennardWang/Single-Cycle-Processor)](LICENSE) © Kennard Wang ( 2020.11.4 )
