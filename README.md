@@ -52,7 +52,7 @@ It is a project of MUST course ***CO101-Computer Organization***, which is a min
 + Clone the repos:
 
   ```
-  git clone https://github.com/KennardWang/Single-Cycle-Processor.git
+  git clone https://github.com/MUST-SCSE-SE-2018/Single-Cycle-Processor.git
   ```
 
 
