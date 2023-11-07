@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  [![description](https://img.shields.io/badge/project-Individual-1F1F1F?style=for-the-badge)](https://github.com/KennardWang/Single-Cycle-Processor)
+  [![description](https://img.shields.io/badge/project-Individual-FFB7C5?style=for-the-badge)](https://github.com/KennardWang/Single-Cycle-Processor)
   &nbsp;
   [![stars](https://img.shields.io/github/stars/KennardWang/Single-Cycle-Processor?style=for-the-badge&color=FDEE21)](https://github.com/KennardWang/Single-Cycle-Processor/stargazers)
   &nbsp;
@@ -81,7 +81,7 @@ It is a project of MUST course ***CO101-Computer Organization***, which is a min
    ``` 
 
    <div align=center>
-     <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/cmd.png" width="70%" />
+     <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/cmd.png" width="70%" />
    </div>
    
    Types of commands are shown in the following list.
@@ -106,39 +106,39 @@ It is a project of MUST course ***CO101-Computer Organization***, which is a min
 + test01 & test02
 
   <div align=center>
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test01.png" height="220px" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/test01.png" height="220px" />
     &nbsp;
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/test02.png" height="220px" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/test02.png" height="220px" />
   </div>
 
 + Test_lw&sw
 
   <div align=center>
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_lw&sw.png" width="70%" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/Test_lw&sw.png" width="70%" />
   </div>
 
 + Test_Negative
 
   <div align=center>
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Negative.png" width="70%" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/Test_Negative.png" width="70%" />
   </div>
 
 + Test_NOR
 
   <div align=center>
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_NOR.png" width="70%" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/Test_NOR.png" width="70%" />
   </div>
 
 + Test_Halt
 
   <div align=center>
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt.png" width="70%" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/Test_Halt.png" width="70%" />
   </div>
 
 + Test_Halt_Outofboundary
 
   <div align=center>
-    <img src="https://kennardwang.github.io/ImageSource/Single-Cycle-Processor/Test_Halt_Outofboundary.png" width="70%" />
+    <img src="https://kennardwang.github.io/Image-Source/Single-Cycle-Processor/Test_Halt_Outofboundary.png" width="70%" />
   </div>
 
 
